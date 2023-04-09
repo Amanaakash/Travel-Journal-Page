@@ -1,13 +1,140 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: inter;
+}
+.text{
+  color:white;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.logo{
+  width:30px;
+}
+
+.navBar{
+  display:flex;
+  background-color:#f55f5a;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  gap:10px;
+  box-shadow: 5px;
+}
+
+.cards-list{
+  display: flex;
+  flex-direction: column;
+  padding:4em 3em;
+}
+
+.location{
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin: 0 1em 0 0.25em;
+}
+
+.loc-logo{
+height: 1em;
+width:100%;
+}
+
+.loc-url{
+  color: var(--clr-text-light);
+  font-size: 0.75em;
+}
+
+.c-title{
+  font-size: 2rem;
+  margin: 0.25em 0;
+  font-weight: 700;
+}
+
+.c-container{
+  display:flex;
+  justify-content: left;
+  gap: 10px;
+}
+.card-img{
+  margin:20px;
+  max-width: 300px;
+  border-radius: 10px;
+
+  transform: scale(1);
+  transition: all 650ms ease-in-out;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  /* filter: brightness(80%); */
+}
+
+.left {
+  display: flex;
+  gap: 5px;
+}
+
+.location {
+  display: flex;
+  gap: 20px;
+  padding-bottom:5px;
+}
+
+.start-end {
+  font-weight: 700;
+}
+
+.card-content{
+  padding-top:30px;
+  padding-left:30px;
+}
+h3{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+h5{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.description{
+  max-width: 50rem;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+.cards-list > .card + .card {
+  padding: 2em 0;
+  border-top: 1px solid var(--clr-text-light);
+}
+
+.cards-list .card:first-child {
+  padding-top: 0;
+}
+
+.cards-list .card:last-child {
+  padding-bottom: 0;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
 }
